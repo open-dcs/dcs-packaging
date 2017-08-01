@@ -1,8 +1,2 @@
 *.*~
 *.swp
-
-dcs-0.2.0.tar.xz
-
-fedora/.build*
-fedora/*.rpm
-fedora/x86_64/

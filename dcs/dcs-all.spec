@@ -21,7 +21,7 @@ BuildRequires:  gobject-introspection-devel
 BuildRequires:  librsvg2-devel
 BuildRequires:  pygobject3-devel
 BuildRequires:  readline-devel
-BuildRequires:  zeromq-devel
+BuildRequires:  zeromq3-devel
 BuildRequires:  libpeas-devel
 BuildRequires:  webkitgtk4-devel
 Requires:       libgee
@@ -33,7 +33,7 @@ Requires:       gobject-introspection
 Requires:       librsvg2
 Requires:       pygobject3
 Requires:       readline
-Requires:       zeromq
+Requires:       zeromq3
 Requires:       libpeas
 Requires:       webkitgtk4
 
