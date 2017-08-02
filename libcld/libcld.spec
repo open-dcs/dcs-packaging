@@ -1,4 +1,4 @@
-Name:           cld
+Name:           libcld
 Version:        0.4.2
 Release:        1%{?dist}
 Summary:        GObject Configuration Library
@@ -43,9 +43,10 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%autosetup -c
+%autosetup -n %{name}-%{version}
 
 %build
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:./deps
 %meson
 %meson_build
 
@@ -60,6 +61,7 @@ developing applications that use %{name}.
 
 %files
 %doc README.md COPYING
+%{_datarootdir}/*
 %{_libdir}/*
 %exclude %{_libdir}/pkgconfig/*
 
