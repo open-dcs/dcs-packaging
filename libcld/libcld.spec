@@ -36,7 +36,7 @@ It is written in Vala and can be used like any GObject-based C library.
 %package        devel
 Summary:        Development files for %{name}
 Group:          Development/Libraries
-Requires:       %{name}-1.0
+Requires:       %{name}
 
 %description    devel
 The %{name}-devel package contains libraries and header files for
